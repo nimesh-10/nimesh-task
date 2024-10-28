@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.font-dash {
+  font-family: fantasy;
+}
+
+.family {
+  font-family: cursive;
+}
+
+.font-login{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media (max-width: 320px) {
+  .mobile-width {
+    width: 100dvw;
+    /* height: 100vh; */
+  }
+}
+
+@media (max-width: 375px) {
+  .mobile-widths {
+    width: 100dvw;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .mobile {
+    width: 100dvw;
+    /* height: 100vh; */
+  }
+}
+
+@media (max-width: 1024px) {
+  .text-size {
+    font-size: 13.6px;
+  }
+}
+
+
+
+.navhide {
+  display: block; 
+
+  @media (min-width: 640px) and (max-width: 768px) {
+    display: none; 
+  }
+}
+
+
+
+  @media (min-width: 640px) and (max-width: 768px) {
+
+    .itemshow {
+      display: flex; 
+      /* flex-direction: column; */
+  }
+}
+
+
+/* nac-slide css in mobileview */
+@media (min-width: 320px) and (max-width: 640px) {
+  .nav-mobile {
+    position: fixed;
+    width: 90%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: #343a40;
+    animation: slide-in 2s forwards;
+  }
+
+  .nav-close{
+    animation: slide-close 2s forwards;
+  }
+
+  @keyframes slide-close {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+    
+  }
+
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-out {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+
+/* loder2 */
+@keyframes bounce1 {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce2 {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce3 {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-15px); 
+  }
+}
+
+.dot {
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.animate-bounce1 {
+  animation-name: bounce1;
+  animation-delay: 0.1s; 
+}
+
+.animate-bounce2 {
+  animation-name: bounce2;
+  animation-delay: 0.2s; 
+}
+
+.animate-bounce3 {
+  animation-name: bounce3;
+  animation-delay: 0.3s; 
+}
+
+
+
+
+
+/* scrollbar css */
+* {
+  scrollbar-color: blue #ede9e9;
+}
+ 
+
